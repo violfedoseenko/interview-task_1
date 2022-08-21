@@ -17,6 +17,8 @@ const LoginPage = () => {
         dispatch(password(PASSWORD, event.target.value))
         console.log(state.password)
     }
+     
+    const enabeledLink = (state.login === 'developer12') && (state.password === '123456');
 
     return (
         <>
@@ -32,11 +34,15 @@ const LoginPage = () => {
                 />
                 <Link 
                     className={`form__link ${
-                        state.login === 'developer12' &&
-                        state.password === '123456' 
+                        enabeledLink
                         ? ''
                         : 'form__link--disabled'
                     }`}
+                    tabindex={
+                        enabeledLink
+                        ? 0
+                        : -1
+                    }
                     to='/profile'
                     > Enter 
                 </Link>

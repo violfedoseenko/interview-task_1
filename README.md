@@ -1,3 +1,22 @@
+# Task:
+
+Create two pages:
+
+- main page
+- profile page
+
+1. On the main page user need to enter your login and password:
+
+login - developer12
+password - 123456
+
+If the username / password is entered incorrectly, it is impossible to click the "Enter" button.
+
+2. After clicking the "Enter" button, the user should be redirected to the profile page, where the login should be displayed.
+
+Redux must be used to store/display the login.
+React-router must be used for routing.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
