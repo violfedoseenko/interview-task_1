@@ -19,21 +19,29 @@ const LoginPage = () => {
     }
 
     return (
-        <form className='form'>
-            <input 
-                className='form__input'
-                onChange={handlerLogin}
-            />
-            <input 
-                className='form__input'
-                onChange={handlerPassword}
-            />
-            <button 
-                className='form__link'
-                to='/'
-                disabled={!(state.login === 'developer12' && state.password === '123456')}
-                > Enter </button>
-        </form>
+        <>
+            <h1>Log in</h1>
+            <form className='form'>
+                <input 
+                    className='form__input'
+                    onChange={handlerLogin}
+                />
+                <input 
+                    className='form__input'
+                    onChange={handlerPassword}
+                />
+                <Link 
+                    className={`form__link ${
+                        state.login === 'developer12' &&
+                        state.password === '123456' 
+                        ? ''
+                        : 'form__link--disabled'
+                    }`}
+                    to='/profile'
+                    > Enter 
+                </Link>
+            </form>
+        </>
     );
 }
 
