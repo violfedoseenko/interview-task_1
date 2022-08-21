@@ -17,6 +17,8 @@ If the username / password is entered incorrectly, it is impossible to click the
 Redux must be used to store/display the login.
 React-router must be used for routing.
 
+![1](https://user-images.githubusercontent.com/57870726/185793850-80580fb1-b1bc-44df-bb77-3f0dfd42c31c.PNG)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
